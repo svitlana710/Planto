@@ -1,0 +1,133 @@
+.slick-slider{
+    z-index: 9;
+    overflow: visible;
+}
+
+.slick-slide{
+    overflow: visible;
+}
+
+  .plants{
+    width: 512px;
+    height: 700px;
+    margin-bottom: 150px;
+
+    .plant{
+        margin-top: 90px;
+        overflow: visible;
+        z-index: 999;
+        height: 644px;
+
+        &-info{
+            margin-top: 320px;
+        }
+
+        img[alt='plant']{
+            top: -150px;
+            z-index: 999;
+            object-fit: cover;
+        }
+    }
+    .slick-dots{
+        rotate: -90deg;
+        position: absolute;
+        left: 220px;
+        top: 650px;
+    li{
+        list-style: none;       
+
+        button{
+            background-color: #fff;
+            cursor: pointer;
+            width: 12px;
+            height: 12px;
+            border-radius: 50px;
+            font-size: 0;
+            border: none;
+        }
+    }
+
+    .slick-active{
+
+        button{
+            width: 12px;
+            height: 26px;
+            margin-top: 10px;
+        }
+    }
+    }
+
+    .prev-arrow{
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        font-size: 0;
+    }
+
+    .next-arrow{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        border: none;
+        background: transparent;
+        position: absolute;
+        left: 400px;
+        top: 520px;
+        background-image: url(../assets/img/right-arrow.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+    }
+
+
+}
+
+.best-container{
+
+    .prev-arrow{
+        rotate: 180deg;
+        left: 1200px;
+        top: 587px;
+        background: transparent ;
+        width: 25px;
+        height: 25px;
+        font-size: 0;
+        border: none;
+        position: absolute;
+        z-index: 10;
+        cursor: pointer;
+        background-image: url(../assets/img/right-arrow.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+    }
+
+    .next-arrow{
+        left: 1315px;
+        top: 586px;
+        background: transparent;
+        width: 25px;
+        height: 25px;
+        font-size: 0;
+        border: none;
+        position: absolute;
+        z-index: 10;
+        cursor: pointer;
+        background-image: url(../assets/img/right-arrow.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+    }
+
+    @media(max-width:768px){
+        .slick-prev{
+            top: 895px;
+            left: 52px;
+        }
+
+        .slick-next{
+            top: 895px;
+            left: 65px;
+        }
+    }
+  }
